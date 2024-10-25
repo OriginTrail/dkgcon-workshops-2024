@@ -13,4 +13,4 @@ RUN apt-get update && \
   apt-get install -y vim
 # RUN /workshop/install.sh
 
-EXPOSE 8900
+EXPOSE 8900 9000

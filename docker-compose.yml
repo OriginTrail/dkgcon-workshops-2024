@@ -7,4 +7,5 @@ services:
     ports:
       - "8545:8545"
       - "8900:8900"
+      - "9000:9000"
     entrypoint: ["tail", "-f", "/dev/null"]
