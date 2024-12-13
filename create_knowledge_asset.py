@@ -78,7 +78,13 @@ print("======================== NODE INFO RECEIVED")
 print_json(info_result)
 divider()
 
-create_asset_result = dkg.asset.create(content, 2)
+# epochs are measured as 1 epochs = 3 months for incentivised storage
+# of knowledge assets
+
+# optionally provide token amount to lock to store on more nodes
+epochs = 2
+token_amount = 0
+create_asset_result = dkg.asset.create(content, epochs, token_amount)
 print("======================== ASSET CREATED")
 print_json(create_asset_result)
 divider()
